@@ -1,18 +1,26 @@
-package Feb18;
+package feb18;
 
 public class Customer_Module {
-public void customer()
-{
-	System.out.println("Login");
-}
+	public void login()
+	{
+		System.out.println("Login");
+	}
+	public void customer()
+	{
+		System.out.println("customer");
+	}
+	public void supplier()
+	{
+		System.out.println("supplier");
+	}
+	public void stocitems()
+	{
+		System.out.println("stockitems");
+	}
 
-public void supplier()
-{
-	System.out.println("supplier");
-}
+	public static void main(String[] args) {
+		
 
-public void stockitems()
-{
-	System.out.println("stockitems");
-}
+	}
+
 }

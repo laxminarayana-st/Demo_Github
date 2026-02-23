@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\LAXMINARAYANA G\AppData\Local\Temp\testng-eclipse-1525536580\testng-customsuite.xml</span>
+                    <span>C:\Users\LAXMINARAYANA G\AppData\Local\Temp\testng-eclipse--1566031952\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Feb18.Register" class="method navigator-link" hash-for-method="register_test">register_test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="feb21.ValidateLogin" class="method navigator-link" hash-for-method="InvalidTest">InvalidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="feb21.ValidateLogin" class="method navigator-link" hash-for-method="ValidTest">ValidTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +126,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Feb18.Register</span>
+              <span class="class-name">feb21.ValidateLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="register_test">
-                  </a> <!-- register_test -->
-                  <span class="method-name">register_test</span>
+                  <a name="InvalidTest">
+                  </a> <!-- InvalidTest -->
+                  <span class="method-name">InvalidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidTest">
+                  </a> <!-- ValidTest -->
+                  <span class="method-name">ValidTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +148,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\LAXMINARAYANA G\AppData\Local\Temp\testng-eclipse-1525536580\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\LAXMINARAYANA G\AppData\Local\Temp\testng-eclipse--1566031952\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +157,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Feb18.Register&quot;/&gt;
+      &lt;class name=&quot;feb21.ValidateLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,16 +197,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'register_test')
-data.setCell(0, 2, 'Feb18.Register')
-data.setCell(0, 3, 21839);
+data.setCell(0, 1, 'ValidTest')
+data.setCell(0, 2, 'feb21.ValidateLogin')
+data.setCell(0, 3, 4904);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'InvalidTest')
+data.setCell(1, 2, 'feb21.ValidateLogin')
+data.setCell(1, 3, 3233);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,11 +236,39 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Feb18.Register</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">register_test</span>
+              <div class="chronological-class-name">feb21.ValidateLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpReport</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupBrowser([TestResult name={null} status=CREATED method=ValidateLogin.ValidTest()[pri:0, instance:feb21.Valida...)</span>
+                <span class="method-start">671 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidTest</span>
+                <span class="method-start">4674 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ValidTest status=SUCCESS method=ValidateLogin.ValidTest()[pri:0, instance:feb21.Val...)</span>
+                <span class="method-start">9584 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupBrowser([TestResult name={null} status=CREATED method=ValidateLogin.InvalidTest()[pri:1, instance:feb21.Vali...)</span>
+                <span class="method-start">9901 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InvalidTest</span>
+                <span class="method-start">11666 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=InvalidTest status=SUCCESS method=ValidateLogin.InvalidTest()[pri:1, instance:feb21...)</span>
+                <span class="method-start">14902 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">15290 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
